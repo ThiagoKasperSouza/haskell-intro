@@ -12,7 +12,7 @@ coffeeType :: String -> String
 
 coffeeType "Expresso" = "Making coffee 1"
 coffeeType "Capuccino" = "Making coffee 2"
-coffee _ = "Invalid coffee type"
+coffeeType _ = "Invalid coffee type"
 
 main:: IO()
 main = do
@@ -20,6 +20,6 @@ main = do
     putStrLn (hasPassed ((calculateAverage 7.0 5.0  6.5) >=averageForApproval))
     putStrLn (hasPassed ((calculateAverage 5.0 2.0 3.0) >=averageForApproval))
 
-    putStrLn coffeeType "Expresso"
-    putStrLn coffeeType "Capuccino"
-    putStrLn coffeeType "Bread"
+    print(coffeeType("Expresso"))
+    print(coffeeType("Capuccino"))
+    print(coffeeType("Bread"))
